@@ -1,3 +1,10 @@
 module.exports = function getZerosCount(number) {
-  // your implementation
-}
+  var counter = 0;
+
+  while (number) {
+    number = Math.floor(number / 5);
+    counter += number;
+  }
+
+  return counter;
+};
